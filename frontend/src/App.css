@@ -1,38 +1,68 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: 0.01em;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Poppins", sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container{
+  width: 100vw;
+  height: 100vh;
+  max-width: 1440px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin: 0 auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.boxcomponent {
+  background-image: url(assets/background.png);
+  background-repeat:no-repeat ;
+  background-size:cover;
+}
+
+.signup {
+  border: 2px solid #C21010;
+  padding: 10px 25px;
+  background-color: #C21010;
   color: white;
+  letter-spacing: 1px;
+  border-radius: 10px;
+  font-size: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.login{
+  padding: 10px 25px;
+  color: #C21010;
+  letter-spacing: 1px;
+  border-radius: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.custom-radio .MuiSvgIcon-root {
+  width: 16px;
+  height: 16px;
+}
+
+.tab.active {
+  border-bottom: 3px solid #C21010;
+  font-weight: 600;
+}
+
+.tab.click {
+  opacity: 1;
+  font-weight: 600;
+}
+
+.tab.notactive {
+  opacity: 0.5;
+  font-weight: 600;
 }
